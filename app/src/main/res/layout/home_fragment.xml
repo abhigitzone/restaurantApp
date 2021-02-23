@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/dp_8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_6"
+            android:fontFamily="@font/haneli"
+            android:text="Take a trip to chow-town"
+            android:textAlignment="center"
+            android:textColor="#ffb26b"
+            android:textSize="@dimen/txt_default_22"
+            android:textStyle="bold" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_250"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="@dimen/dp_6"
+            app:auto_cycle="true"
+            app:corner_radius="12"
+            app:delay="0"
+            app:error_image="@drawable/sample"
+            app:period="1000"
+            app:placeholder="@drawable/sample" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cae4db"
+            android:fontFamily="@font/rancher"
+            android:text="Eat. Drink. Love."
+            android:textAlignment="center"
+            android:textColor="#6f9eaf"
+            android:textSize="@dimen/txt_default_22"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/noodles_home"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_margin="@dimen/dp_6"
+                    app:cardCornerRadius="@dimen/dp_8"
+                    app:cardElevation="@dimen/dp_6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/noodle_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="Noodles \nyou love!"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/burger_home"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_margin="@dimen/dp_6"
+                    app:cardCornerRadius="@dimen/dp_8"
+                    app:cardElevation="@dimen/dp_6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/burger_t" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:text="Delighted \nburger"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pizza_home"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_margin="@dimen/dp_6"
+                    app:cardCornerRadius="@dimen/dp_8"
+                    app:cardElevation="@dimen/dp_6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pizza" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="4dp"
+                            android:layout_marginBottom="@dimen/dp_4"
+                            android:text="Pizza \nforever!"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/juice_home"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_margin="@dimen/dp_6"
+                    app:cardCornerRadius="@dimen/dp_8"
+                    app:cardElevation="@dimen/dp_6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/juice" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="4dp"
+                            android:text="Stay \nHealthy"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Best in town"
+            android:textAlignment="center"
+            android:textColor="#9f5f80"
+            android:textSize="@dimen/txt_default_22"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/thali_home"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/dp_6"
+                app:cardCornerRadius="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_6">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/thali" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Thali"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/briyani_home"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/dp_6"
+                app:cardCornerRadius="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_6">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/briyani" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Briyaani"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sweets_home"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/dp_6"
+                app:cardCornerRadius="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_6">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sweets" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Sweets"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fastFood_home"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/dp_6"
+                app:cardCornerRadius="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_6">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fast_food" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Fast food"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:text="@string/food_quotes"
+            android:textAlignment="center"
+            android:textSize="@dimen/sp_12"
+
+            />
+
+    </LinearLayout>
+
+</ScrollView>

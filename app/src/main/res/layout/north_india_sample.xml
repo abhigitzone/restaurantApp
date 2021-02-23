@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/north_card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_150"
+    android:layout_marginStart="@dimen/dp_6"
+    android:layout_marginTop="@dimen/dp_6"
+    android:layout_marginEnd="@dimen/dp_6"
+    android:layout_marginBottom="@dimen/dp_6"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/north_food_img"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:scaleType="centerCrop"
+            android:src="@drawable/north_india" />
+
+        <LinearLayout
+            android:id="@+id/desc_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_toEndOf="@id/north_food_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/north_food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/north_food_desc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ly_40"
+                android:layout_marginTop="@dimen/dp_4"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:text="@string/title_description"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/price_40"
+                android:textColor="@color/maroon"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:id="@+id/item_add_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/decrementCounter"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_left_curve"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/negative"
+                        android:textColor="@color/TextColor"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/itemCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:text="@string/_1" />
+
+                    <Button
+                        android:id="@+id/incrementCounter"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_right_curve"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/plus"
+                        android:textColor="@color/TextColor"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/orderNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ly_40"
+                    android:layout_marginEnd="@dimen/dp_4"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/button"
+                    android:text="@string/order"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

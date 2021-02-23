@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/explore"
+            android:icon="@drawable/ic_baseline_explore_24"
+            android:title="Explore" />
+
+        <item
+            android:id="@+id/categories"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="Shop by Categories" />
+
+        <item
+            android:id="@+id/tableBook"
+            android:icon="@drawable/ic_baseline_book_online_24"
+            android:title="Book the Table" />
+
+    </group>
+
+    <item android:title="Other">
+
+        <menu>
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/language"
+                android:icon="@drawable/ic_baseline_language_24"
+                android:title="Change Language" />
+
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_baseline_feedback_24"
+                android:title="Feedback" />
+
+            <item
+                android:id="@+id/customer"
+                android:icon="@drawable/customer"
+                android:title="Customer Services" />
+
+        </menu>
+
+    </item>
+
+</menu>

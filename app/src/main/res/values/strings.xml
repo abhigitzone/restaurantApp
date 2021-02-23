@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="home">Home</string>
+    <string name="orders">Orders</string>
+    <string name="account">Profile</string>
+    <string name="add_to_bucket">Add to bucket</string>
+    <string name="dal_makhni">Dal makhani is a popular dish from the Punjab region of the Indian subcontinent.</string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="sample">sample</string>
+    <string name="Navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="Navigation_drawer_close">close Navigation Drawer</string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="favourite">favourite</string>
+    <string name="food_quotes">“There is no love sincerer than the love of food.” \n― George Bernard Shaw</string>
+    <string name="hello_there">Hello there</string>
+    <string name="no_order">No order yet :( \nAren\'t you feeling hungry?</string>
+    <string name="order">Order</string>
+    <string name="price_40">Price : $40</string>
+    <string name="title_description">title description</string>
+    <string name="title_name">Title name</string>
+    <string name="plus">+</string>
+    <string name="_1">1</string>
+    <string name="negative">-</string>
+</resources>
